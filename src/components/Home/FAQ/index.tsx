@@ -20,34 +20,34 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="relative py-1 bg-cover bg-center overflow-hidde dark:bg-darkmode">
-      <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md)">
-        <div className="relative rounded-2xl py-24 bg-faqBg bg-no-repeat bg-cover bg-primary">
-          <p className="text-lg font-normal text-white text-center mb-6">PYETJE TË SHPESHTA</p>
-          <h2 className="text-6xl font-semibold text-center text-white mx-72">
+    <section className="relative py-8 md:py-16 bg-cover bg-center overflow-hidden dark:bg-darkmode">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
+        <div className="relative rounded-xl md:rounded-2xl py-12 md:py-24 bg-faqBg bg-no-repeat bg-cover bg-primary">
+          <p className="text-base md:text-lg font-normal text-white text-center mb-4 md:mb-6">PYETJE TË SHPESHTA</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center text-white px-4 md:px-8 lg:px-16 mb-8 md:mb-12">
             Pyetjet më të shpeshta nga klientët tanë.
           </h2>
-          <div className="w-full px-4 pt-16">
+          <div className="w-full px-4 md:px-6 pt-8 md:pt-16">
             
             {faqData.map((item, index) => (
               <div 
                 key={index} 
-                className={`mx-auto w-full max-w-5xl rounded-2xl p-8 bg-white ${index < faqData.length - 1 ? 'mb-5' : ''}`}
+                className={`mx-auto w-full max-w-4xl rounded-lg md:rounded-2xl p-4 md:p-6 lg:p-8 bg-white ${index < faqData.length - 1 ? 'mb-4 md:mb-5' : ''}`}
               >
                 <Disclosure>
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full justify-between items-center text-left text-2xl font-medium focus:outline-hidden">
-                        <span className="text-black">{item.question}</span>
+                      <Disclosure.Button className="flex w-full justify-between items-center text-left text-base sm:text-lg md:text-xl lg:text-2xl font-medium focus:outline-hidden">
+                        <span className="text-black pr-4 md:pr-8">{item.question}</span>
                         <div
-                          className={`h-5 w-5 transform transition-transform duration-300 ${open ? "rotate-180" : ""
+                          className={`flex-shrink-0 h-8 w-8 md:h-10 md:w-10 flex items-center justify-center rounded-full bg-gray-100 transition-transform duration-300 ${open ? "rotate-180 bg-primary text-white" : ""
                             }`}
                         >
-                          <Icon icon="lucide:chevron-up" width="20" height="20" />
+                          <Icon icon="lucide:chevron-up" className="h-5 w-5 md:h-6 md:w-6" />
                         </div>
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-16 text-black/50 font-normal text-left pt-4 mt-6 border-t border-border">
-                        <div className="lg:max-w-70%">
+                      <Disclosure.Panel className="text-sm md:text-base lg:text-lg text-black/70 font-normal text-left pt-4 mt-4 md:mt-6 border-t border-gray-200">
+                        <div className="lg:max-w-[90%] pt-2 md:pt-4">
                           {item.answer}
                         </div>
                       </Disclosure.Panel>
@@ -63,4 +63,5 @@ const FAQ = () => {
     </section>
   );
 };
+
 export default FAQ;

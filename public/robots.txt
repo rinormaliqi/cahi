@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Sitemaps
+Sitemap: https://pastrim-kimik-cahi.com/sitemap.xml
+Sitemap: https://pastrim-kimik-cahi.com/sitemap-index.xml

@@ -60,10 +60,10 @@ const Header: React.FC = () => {
           >
             <div className="flex items-center gap-3">
               {/* Optional: Add cleaning company logo */}
-              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                <Icon 
-                  icon="mdi:clean" 
+              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                <img 
                   className="text-white text-xl" 
+                  src="/logo.png"
                 />
               </div>
               <div>

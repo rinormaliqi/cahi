@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-import { postData } from "@/app/api/data";
 
 function SampleNextArrow(props: { className: any; style: any; onClick: any }) {
   const { className, style, onClick } = props;
@@ -95,26 +94,7 @@ const Featured = () => {
           </h3>
         </div>
 
-        <Slider {...settings}>
-          {postData.map((items, i) => (
-            <div key={i}>
-              <div className="bg-transparent m-3 rounded-3xl">
-                <Image
-                  src={items.imgSrc}
-                  alt="gaby"
-                  width={636}
-                  height={620}
-                  className="rounded-2xl"
-                />
-                <div className="w-345">
-                  <h4 className="sm:text-5xl font-bold text-center sm:text-start mt-12 text-white">
-                    {items.heading}
-                  </h4>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
+
       </div>
     </section>
   );

@@ -10,7 +10,6 @@ import Featured from "@/components/Home/Featured";
 import Manage from "@/components/Home/Manage";
 import FAQ from "@/components/Home/FAQ";
 import ContactForm from "@/components/Home/Testimonials";
-import Articles from "@/components/Home/Articles";
 import Join from "@/components/Home/Joinus";
 import Insta from "@/components/Home/Insta";
 import { Metadata } from "next";

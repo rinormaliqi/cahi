@@ -4,21 +4,14 @@ import { Icon } from "@iconify/react";
 
 const Footer = () => {
   const services = [
-    { label: "Pastrim i Tapicerive", href: "/sherbimet/tapiceri" },
-    { label: "Pastrim i Qilimave", href: "/sherbimet/qilima" },
-    { label: "Pastrim i Shtrojave", href: "/sherbimet/shtroja" },
-    { label: "Pastrim Industrial", href: "/sherbimet/industrial" },
-    { label: "Pastrim i Fasadave", href: "/sherbimet/fasada" },
-    { label: "Pastrim i Makinave", href: "/sherbimet/makina" }
+  { label: "Pastrim Rrobash të Përditshme", href: "#about" },
+  { label: "Pastrim Kostumesh dhe Xhupash", href: "#about"  },
+  { label: "Pastrim Rrobash të Ndjeshme", href: "#about"  },
+  { label: "Trajtim Kundër Njollave", href: "#about"  }
   ];
 
   const company = [
-    { label: "Rreth Nesh", href: "/rreth-nesh" },
-    { label: "Çmimet", href: "/cmimet" },
-    { label: "Projektet", href: "/projektet" },
-    { label: "Referencat", href: "/referencat" },
-    { label: "Punë të Lira", href: "/karriere" },
-    { label: "Garancia", href: "/garancia" }
+    { label: "Rreth Nesh", href: "#about" },
   ];
 
   const contact = [
@@ -26,7 +19,6 @@ const Footer = () => {
     { label: "+383 44 893 566", href: "tel:+38344893566", icon: "mdi:phone" },
     { label: "info@pastrim-kimik-cahi.com", href: "mailto:info@pastrim-kimik-cahi.com", icon: "mdi:email" },
     { label: "Hënë - Premte: 8:00-18:00", href: "#", icon: "mdi:clock" },
-    { label: "Shtunë: 9:00-15:00", href: "#", icon: "mdi:clock" }
   ];
 
   return (
@@ -195,19 +187,19 @@ const Footer = () => {
               </h3>
             </div>
             <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
-              <Link href="/politika-e-privatesise">
+              <Link href="/">
                 <span className="text-gray-400 hover:text-white text-xs md:text-sm transition-colors whitespace-nowrap">
                   Politika e Privatësisë
                 </span>
               </Link>
               <span className="text-gray-600 hidden md:block">|</span>
-              <Link href="/kushtet-dhe-kushtet">
+              <Link href="/">
                 <span className="text-gray-400 hover:text-white text-xs md:text-sm transition-colors whitespace-nowrap">
                   Kushtet dhe Kushtet
                 </span>
               </Link>
               <span className="text-gray-600 hidden md:block">|</span>
-              <Link href="/faq">
+              <Link href="#faq">
                 <span className="text-gray-400 hover:text-white text-xs md:text-sm transition-colors whitespace-nowrap">
                   Pyetje të Shpeshta
                 </span>

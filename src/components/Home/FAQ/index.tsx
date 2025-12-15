@@ -5,22 +5,23 @@ import { Disclosure } from "@headlessui/react";
 
 const FAQ = () => {
   const faqData = [
-    {
-      question: "Çfarë lloj shërbimesh pastrimi ofroni?",
-      answer: "Ofrojmë një gamë të gjerë shërbimesh pastrimi kimik përfshirë pastrimin e tapicerieve, qilimave, shtrojave, fasadave dhe sipërfaqeve industriale. Përdorim teknologji të avancuar dhe kimikate profesionale për çdo lloj ndotjeje."
-    },
-    {
-      question: "A janë produktet tuaja të sigurta për fëmijët dhe kafshët shtëpiake?",
-      answer: "Po, të gjitha produktet tona janë biodegradabile, jo-tokside dhe të testuara për siguri. Janë të sigurta për fëmijët dhe kafshët shtëpiake pas aplikimit."
-    },
-    {
-      question: "Sa kohë duhet për të tharë zona e pastruar?",
-      answer: "Koha e tharjes varet nga lloji i sipërfaqes dhe kushtet atmosferike. Në përgjithësi, qilimat dhe tapiceritë thahen brenda 4-6 orësh. Ne përdorim pajisje speciale tharjeje për të shpejtuar procesin."
-    }
+{
+  question: "Çfarë lloj shërbimesh pastrimi ofroni?",
+  answer: "Ofrojmë shërbime profesionale të pastrimit kimik për rroba, duke përfshirë kostume, fustane, pallto, xhaketa, këmisha dhe veshje delikate. Trajtojmë njolla të ndryshme duke ruajtur strukturën dhe ngjyrën e rrobave."
+},
+{
+  question: "A janë materialet dhe kimikatet të sigurta për rrobat?",
+  answer: "Po, përdorim produkte profesionale dhe teknologji moderne të pastrimit kimik që janë të sigurta për të gjitha llojet e tekstileve. Procesi ynë është i dizajnuar për të mos dëmtuar fibrat dhe për të zgjatur jetën e rrobave."
+},
+{
+  question: "Sa kohë zgjat procesi i pastrimit të rrobave?",
+  answer: "Koha e pastrimit varet nga lloji i rrobës dhe niveli i ndotjes. Në shumicën e rasteve, rrobat janë gati për marrje brenda 24–48 orësh. Për shërbime ekspres, koha mund të jetë edhe më e shkurtër."
+}
+
   ];
 
   return (
-    <section className="relative py-8 md:py-16 bg-cover bg-center overflow-hidden dark:bg-darkmode">
+    <section className="relative py-8 md:py-16 bg-cover bg-center overflow-hidden dark:bg-darkmode" id="faq">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="relative rounded-xl md:rounded-2xl py-12 md:py-24 bg-faqBg bg-no-repeat bg-cover bg-primary">
           <p className="text-base md:text-lg font-normal text-white text-center mb-4 md:mb-6">PYETJE TË SHPESHTA</p>

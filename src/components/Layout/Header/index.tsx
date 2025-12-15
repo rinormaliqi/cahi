@@ -54,24 +54,31 @@ const Header: React.FC = () => {
     >
       <div className="lg:py-0 py-2">
         <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) flex items-center justify-between px-4">
-          {/* Logo Section */}
-          <div
-            className={`pr-4 lg:pr-8 border-r border-gray-300 duration-300 ${sticky ? "py-3" : "py-5"}`}
+          <Link 
+            href="/" 
+            className={`pr-4 lg:pr-8 border-r border-gray-300 duration-300 ${sticky ? "py-2" : "py-3 lg:py-4"}`}
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 cursor-pointer">
               {/* Optional: Add cleaning company logo */}
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                 <img 
                   className="text-white text-xl" 
                   src="/logo.png"
+                  alt="Pastrim Kimik Cahi Logo"
                 />
               </div>
               <div>
-                <h1 className="font-bold text-lg text-blue-800">PASTRIM KIMIK CAHI</h1>
-                <p className="text-xs text-gray-600">Shërbime Profesionale të Pastrimit</p>
+  <h1 className="font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-blue-800">
+  PASTRIM KIMIK CAHI
+</h1>
+
+<p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-gray-600">
+  Shërbime Profesionale të Pastrimit
+</p>
+
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Navigation Menu */}
           <nav className="hidden lg:flex grow items-center gap-8 justify-center">
@@ -90,8 +97,10 @@ const Header: React.FC = () => {
                 <Icon 
                   icon="mdi:phone" 
                   className="text-blue-600 text-lg" 
+                                onClick={() => window.open('https://wa.me/38344893566', '_blank')}
                 />
-                <span className="font-semibold text-blue-800">+383 44 893 566</span>
+                <button               onClick={() => window.open('https://wa.me/38344893566', '_blank')}
+ className="font-semibold text-blue-800 pointer">+383 44 893 566</button>
               </div>
               <p className="text-xs text-gray-600 mt-1">Na telefononi për ofertë</p>
             </div>
@@ -99,6 +108,7 @@ const Header: React.FC = () => {
             {/* Call Button for Mobile/Tablet */}
             <a 
               href="tel:+38344893566"
+                            onClick={() => window.open('https://wa.me/38344893566', '_blank')}
               className="lg:hidden flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
             >
               <Icon icon="mdi:phone" className="text-white" />
@@ -161,6 +171,7 @@ const Header: React.FC = () => {
                   <p className="text-sm text-gray-600">Na telefononi për ofertë</p>
                   <a 
                     href="tel:+38344893566" 
+                                  onClick={() => window.open('https://wa.me/38344893566', '_blank')}
                     className="text-xl font-bold text-blue-800 hover:text-blue-600"
                   >
                     +383 44 893 566
@@ -186,19 +197,19 @@ const Header: React.FC = () => {
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-center gap-2">
                     <Icon icon="mdi:check-circle" className="text-green-500" />
-                    <span>Pastrim i thellë i tapicerieve</span>
+                    <span>Pastrim rrobash te perditshme</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon icon="mdi:check-circle" className="text-green-500" />
-                    <span>Pastrim i qilimave dhe shtrojave</span>
+                    <span>Pastrim i kostumeve dhe xhupash</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon icon="mdi:check-circle" className="text-green-500" />
-                    <span>Shërbime industriale</span>
+                    <span>Pastrim rrobash te ndjehshme</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon icon="mdi:check-circle" className="text-green-500" />
-                    <span>Pastrim objektesh të tëra</span>
+                    <span>Trajtim kundra njollave</span>
                   </li>
                 </ul>
               </div>
@@ -208,6 +219,7 @@ const Header: React.FC = () => {
             <div className="p-6 border-t bg-gray-50">
               <a
                 href="tel:+38344893566"
+                              onClick={() => window.open('https://wa.me/38344893566', '_blank')}
                 className="w-full bg-blue-600 text-white text-center py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
               >
                 <Icon icon="mdi:phone" />

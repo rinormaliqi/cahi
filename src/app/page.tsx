@@ -13,6 +13,7 @@ import ContactForm from "@/components/Home/Testimonials";
 import Join from "@/components/Home/Joinus";
 import Insta from "@/components/Home/Insta";
 import { Metadata } from "next";
+import AboutUs from "@/components/Home/AboutUs";
 
 export const metadata: Metadata = {
   title: "Cahi Pastrim Kimik - Shërbime Profesionale të Pastrimit në Kosovë",
@@ -210,6 +211,7 @@ export default function Home() {
         <h1 className="sr-only">Cahi Pastrim Kimik - Shërbime Profesionale të Pastrimit në Kosovë</h1>
         <Hero />
         <Beliefs />
+        <AboutUs/>
         <Work />
         <FAQ />
         <ContactForm />

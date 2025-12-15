@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 const Beliefs = () => {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 overflow-hidden py-16 lg:py-24">
+    <section className="bg-gray-50 dark:bg-gray-900 overflow-hidden py-16 lg:py-24" id="services">
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {/* COLUMN-1 - Cilësia dhe Besueshmëria */}
@@ -49,18 +49,18 @@ const Beliefs = () => {
               
               <div className="text-center sm:text-start">
                 <Link
-                  href="/rreth-nesh"
+                  href="#about"
                   className="inline-flex items-center gap-3 text-lg py-4 px-8 font-semibold text-blue-600 rounded-full duration-300 bg-white hover:bg-gray-100 hover:shadow-lg transition-all"
                 >
                   <Icon icon="mdi:information" className="text-xl" />
-                  <span>Mësoni më shumë rreth nesh</span>
+                  <a href="#about">Mësoni më shumë rreth nesh</a>
                 </Link>
               </div>
             </div>
           </div>
 
           {/* COLUMN-2 - Teknologjia dhe Innovacioni */}
-          <div className="bg-gradient-to-br from-green-500 to-green-700 pt-12 px-6 sm:px-12 lg:px-16 pb-16 md:pb-20 rounded-3xl relative overflow-hidden">
+          <div className="bg-gradient-to-br from-blue-500 to-blue-700 pt-12 px-6 sm:px-12 lg:px-16 pb-16 md:pb-20 rounded-3xl relative overflow-hidden">
             {/* Dekorativ Background Pattern */}
             <div className="absolute inset-0 opacity-10">
               <div className="absolute right-0 bottom-0 w-64 h-64">
@@ -100,11 +100,12 @@ const Beliefs = () => {
               
               <div className="text-center sm:text-start">
                 <Link
-                  href="/sherbimet"
+                  href="#services"
                   className="inline-flex items-center gap-3 text-lg py-4 px-8 font-semibold text-green-600 rounded-full duration-300 bg-white hover:bg-gray-100 hover:shadow-lg transition-all"
                 >
                   <Icon icon="mdi:toolbox" className="text-xl" />
-                  <span>Shihni të gjitha shërbimet</span>
+                  <button               onClick={() => window.open('https://wa.me/38344893566', '_blank')}
+>Kontakto</button>
                 </Link>
               </div>
             </div>
@@ -145,13 +146,15 @@ const Beliefs = () => {
             <div className="flex gap-4">
               <a
                 href="tel:+38344893566"
+                              onClick={() => window.open('https://wa.me/38344893566', '_blank')}
+
                 className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 <Icon icon="mdi:phone" />
                 <span>+383 44 893 566</span>
               </a>
               <Link
-                href="/kontakti"
+                href="#contact"
                 className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-blue-600 font-semibold py-3 px-6 rounded-lg border border-blue-600 transition-colors"
               >
                 <Icon icon="mdi:email" />
